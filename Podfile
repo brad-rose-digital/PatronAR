@@ -5,23 +5,20 @@ inhibit_all_warnings!
 
 def shared_pods
     
-    # Pods for DoritosAR
-    #pod 'AudioKit'
-    
 end
 
-target 'DoritosAR-Dev' do
+target 'Patron PoC-Dev' do
     shared_pods
 end
 
-target 'DoritosAR-Prod' do
+target 'Patron PoC-Prod' do
     shared_pods
 end
 
-target 'DoritosARTests' do
+target 'Patron PoCTests' do
     shared_pods
 end
 
-target 'DoritosARUITests' do
+target 'Patron PoCUITests' do
     shared_pods
 end

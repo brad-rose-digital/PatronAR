@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let navController = UINavigationController()
         navController.setNavigationBarHidden(true, animated: false)
-        let mainView = AnimationLaunchScreen(nibName: nil, bundle: nil)
+        let mainView = ViewController(nibName: nil, bundle: nil)
         navController.viewControllers = [mainView]
         self.window!.rootViewController = navController
         self.window?.makeKeyAndVisible()

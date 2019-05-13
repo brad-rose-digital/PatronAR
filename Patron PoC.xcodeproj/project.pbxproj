@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23FAA490876957A5DE643A7C /* Pods_Patron_PoC_Prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9571B3C97F6F44A7AEC76217 /* Pods_Patron_PoC_Prod.framework */; };
+		3A37D8E52281D62300A8701D /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8E02281D62300A8701D /* NodeGenerator.swift */; };
+		3A37D8E62281D62300A8701D /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8E02281D62300A8701D /* NodeGenerator.swift */; };
+		3A37D8E72281D62300A8701D /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8E02281D62300A8701D /* NodeGenerator.swift */; };
+		3A37D8E82281D62300A8701D /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8E02281D62300A8701D /* NodeGenerator.swift */; };
+		3A37D8EF2281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
+		3A37D8F02281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
+		3A37D8F12281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
+		3A37D8F22281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
+		3A37D8F52281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
+		3A37D8F62281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
+		3A37D8F72281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
+		3A37D8F82281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
+		3A37D8FA2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
+		3A37D8FB2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
+		3A37D8FC2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
+		3A37D8FD2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
+		3A37D9042282016900A8701D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D9032282016900A8701D /* art.scnassets */; };
+		3A37D9052282016900A8701D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D9032282016900A8701D /* art.scnassets */; };
+		3A37D9062282016900A8701D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D9032282016900A8701D /* art.scnassets */; };
+		3A37D9072282016900A8701D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D9032282016900A8701D /* art.scnassets */; };
+		3A37D90922820A0C00A8701D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D90822820A0C00A8701D /* Plane.swift */; };
+		3A37D90A22820A0C00A8701D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D90822820A0C00A8701D /* Plane.swift */; };
+		3A37D90B22820A0C00A8701D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D90822820A0C00A8701D /* Plane.swift */; };
+		3A37D90C22820A0C00A8701D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D90822820A0C00A8701D /* Plane.swift */; };
+		3A626FEF227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
+		3A626FF0227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
+		3A626FF1227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
+		3A626FF5227B7D9B003BB75F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD878221DFE1B0049D066 /* ViewController.swift */; };
+		3A626FF6227B7D9B003BB75F /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
+		3A626FFA227B7D9B003BB75F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD876221DFE1B0049D066 /* AppDelegate.swift */; };
+		3A627000227B7D9B003BB75F /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582F2277841900D88FF2 /* ARKit.framework */; };
+		3A627001227B7D9B003BB75F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582B2277841400D88FF2 /* CoreAudio.framework */; };
+		3A627002227B7D9B003BB75F /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */; };
+		3A627005227B7D9B003BB75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87F221DFE1C0049D066 /* LaunchScreen.storyboard */; };
+		3A627006227B7D9B003BB75F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87D221DFE1C0049D066 /* Assets.xcassets */; };
+		3A627009227B7D9B003BB75F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87A221DFE1B0049D066 /* Main.storyboard */; };
+		3A6DD27F2279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
+		3A6DD2802279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
+		3A6DD2812279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
+		3A6E582D2277841400D88FF2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582B2277841400D88FF2 /* CoreAudio.framework */; };
+		3A6E582E2277841400D88FF2 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */; };
+		3A6E58302277841900D88FF2 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582F2277841900D88FF2 /* ARKit.framework */; };
+		469402FF859941E6D4672141 /* Pods_Patron_PoCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1A1D67C445E56F86908A9F /* Pods_Patron_PoCTests.framework */; };
+		61CC4D6763211989FEB72493 /* Pods_Patron_PoCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82876ED1A2D8BA41C8B21989 /* Pods_Patron_PoCUITests.framework */; };
+		B66C01C7532508551762F276 /* Pods_Patron_PoC_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8144B9AE5CCF82C59DF8314C /* Pods_Patron_PoC_Dev.framework */; };
+		BDFAD877221DFE1B0049D066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD876221DFE1B0049D066 /* AppDelegate.swift */; };
+		BDFAD879221DFE1B0049D066 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD878221DFE1B0049D066 /* ViewController.swift */; };
+		BDFAD87C221DFE1B0049D066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87A221DFE1B0049D066 /* Main.storyboard */; };
+		BDFAD87E221DFE1C0049D066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87D221DFE1C0049D066 /* Assets.xcassets */; };
+		BDFAD881221DFE1C0049D066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87F221DFE1C0049D066 /* LaunchScreen.storyboard */; };
+		BDFAD88C221DFE1C0049D066 /* PatronARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD88B221DFE1C0049D066 /* PatronARTests.swift */; };
+		BDFAD897221DFE1C0049D066 /* PatronARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD896221DFE1C0049D066 /* PatronARUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDFAD888221DFE1C0049D066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDFAD86B221DFE1B0049D066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFAD872221DFE1B0049D066;
+			remoteInfo = DoritosAR;
+		};
+		BDFAD893221DFE1C0049D066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDFAD86B221DFE1B0049D066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFAD872221DFE1B0049D066;
+			remoteInfo = DoritosAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E4B3B319175837D73DFB82 /* Pods-Patron PoCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoCTests/Pods-Patron PoCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AF87451C4ABD14F15CA28DD /* Pods-Patron PoC-Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoC-Prod.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoC-Prod/Pods-Patron PoC-Prod.release.xcconfig"; sourceTree = "<group>"; };
+		11EC113AEEEAE7B162A7C4E0 /* Pods-DoritosAR-Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosAR-Prod.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosAR-Prod/Pods-DoritosAR-Prod.release.xcconfig"; sourceTree = "<group>"; };
+		124E4428478461F019D2F505 /* Pods-DoritosAR-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosAR-Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosAR-Dev/Pods-DoritosAR-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		1823C736626CF884EF6CC4C5 /* Pods-DoritosARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosARTests/Pods-DoritosARTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A37D8E02281D62300A8701D /* NodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeGenerator.swift; sourceTree = "<group>"; };
+		3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PatronLaunchImage.png; sourceTree = "<group>"; };
+		3A37D8F42281FDE100A8701D /* Espolon.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = Espolon.arobject; sourceTree = "<group>"; };
+		3A37D8F92282009D00A8701D /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		3A37D9032282016900A8701D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		3A37D90822820A0C00A8701D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		3A626FEE227B7D8B003BB75F /* Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Prod.plist"; sourceTree = "<group>"; };
+		3A62700E227B7D9B003BB75F /* Patron PoC-Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patron PoC-Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRecorder.swift; sourceTree = "<group>"; };
+		3A6E582B2277841400D88FF2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		3A6E582F2277841900D88FF2 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		662DAE8188E9604CBE91537E /* Pods-DoritosAR-Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosAR-Prod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosAR-Prod/Pods-DoritosAR-Prod.debug.xcconfig"; sourceTree = "<group>"; };
+		8144B9AE5CCF82C59DF8314C /* Pods_Patron_PoC_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patron_PoC_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82876ED1A2D8BA41C8B21989 /* Pods_Patron_PoCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patron_PoCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9571B3C97F6F44A7AEC76217 /* Pods_Patron_PoC_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patron_PoC_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		997F978B95F2DF44396B3B2C /* Pods-Patron PoC-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoC-Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoC-Dev/Pods-Patron PoC-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		AF8FE192441E735B90FC9566 /* Pods-Patron PoCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoCTests/Pods-Patron PoCTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5421A26E5BF54C0E2B33512 /* Pods-DoritosAR-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosAR-Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosAR-Dev/Pods-DoritosAR-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		BD1A1D67C445E56F86908A9F /* Pods_Patron_PoCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patron_PoCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFAD873221DFE1B0049D066 /* Patron PoC-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patron PoC-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFAD876221DFE1B0049D066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDFAD878221DFE1B0049D066 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDFAD87B221DFE1B0049D066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDFAD87D221DFE1C0049D066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDFAD880221DFE1C0049D066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDFAD882221DFE1C0049D066 /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Dev.plist"; sourceTree = "<group>"; };
+		BDFAD887221DFE1C0049D066 /* Patron PoCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patron PoCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFAD88B221DFE1C0049D066 /* PatronARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatronARTests.swift; sourceTree = "<group>"; };
+		BDFAD88D221DFE1C0049D066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFAD892221DFE1C0049D066 /* Patron PoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patron PoCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFAD896221DFE1C0049D066 /* PatronARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatronARUITests.swift; sourceTree = "<group>"; };
+		BDFAD898221DFE1C0049D066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AA081D1EE0F7FDD33AC1C8 /* Pods-Patron PoC-Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoC-Prod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoC-Prod/Pods-Patron PoC-Prod.debug.xcconfig"; sourceTree = "<group>"; };
+		CA521FFA296528A0B3A47139 /* Pods-DoritosARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosARTests/Pods-DoritosARTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0C9C2389B4A0E7AD5B4EBC5 /* Pods-Patron PoCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoCUITests/Pods-Patron PoCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1784BF56C95FFDD5AADEE14 /* Pods-Patron PoCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoCUITests/Pods-Patron PoCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBC719962AEF02803A6648D8 /* Pods-DoritosARUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosARUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosARUITests/Pods-DoritosARUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC2DB30C5B3D693112290734 /* Pods-Patron PoC-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patron PoC-Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patron PoC-Dev/Pods-Patron PoC-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		F2D4A5D470506578A49B5347 /* Pods-DoritosARUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosARUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosARUITests/Pods-DoritosARUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A626FFF227B7D9B003BB75F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A627000227B7D9B003BB75F /* ARKit.framework in Frameworks */,
+				3A627001227B7D9B003BB75F /* CoreAudio.framework in Frameworks */,
+				3A627002227B7D9B003BB75F /* CoreAudioKit.framework in Frameworks */,
+				23FAA490876957A5DE643A7C /* Pods_Patron_PoC_Prod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD870221DFE1B0049D066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6E58302277841900D88FF2 /* ARKit.framework in Frameworks */,
+				3A6E582D2277841400D88FF2 /* CoreAudio.framework in Frameworks */,
+				3A6E582E2277841400D88FF2 /* CoreAudioKit.framework in Frameworks */,
+				B66C01C7532508551762F276 /* Pods_Patron_PoC_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD884221DFE1C0049D066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469402FF859941E6D4672141 /* Pods_Patron_PoCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD88F221DFE1C0049D066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CC4D6763211989FEB72493 /* Pods_Patron_PoCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14666A8B0DE6037ABB732D0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				124E4428478461F019D2F505 /* Pods-DoritosAR-Dev.debug.xcconfig */,
+				B5421A26E5BF54C0E2B33512 /* Pods-DoritosAR-Dev.release.xcconfig */,
+				662DAE8188E9604CBE91537E /* Pods-DoritosAR-Prod.debug.xcconfig */,
+				11EC113AEEEAE7B162A7C4E0 /* Pods-DoritosAR-Prod.release.xcconfig */,
+				CA521FFA296528A0B3A47139 /* Pods-DoritosARTests.debug.xcconfig */,
+				1823C736626CF884EF6CC4C5 /* Pods-DoritosARTests.release.xcconfig */,
+				F2D4A5D470506578A49B5347 /* Pods-DoritosARUITests.debug.xcconfig */,
+				EBC719962AEF02803A6648D8 /* Pods-DoritosARUITests.release.xcconfig */,
+				EC2DB30C5B3D693112290734 /* Pods-Patron PoC-Dev.debug.xcconfig */,
+				997F978B95F2DF44396B3B2C /* Pods-Patron PoC-Dev.release.xcconfig */,
+				C7AA081D1EE0F7FDD33AC1C8 /* Pods-Patron PoC-Prod.debug.xcconfig */,
+				0AF87451C4ABD14F15CA28DD /* Pods-Patron PoC-Prod.release.xcconfig */,
+				08E4B3B319175837D73DFB82 /* Pods-Patron PoCTests.debug.xcconfig */,
+				AF8FE192441E735B90FC9566 /* Pods-Patron PoCTests.release.xcconfig */,
+				D0C9C2389B4A0E7AD5B4EBC5 /* Pods-Patron PoCUITests.debug.xcconfig */,
+				E1784BF56C95FFDD5AADEE14 /* Pods-Patron PoCUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		299E4AB43FA0B15C474A0357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A6E582F2277841900D88FF2 /* ARKit.framework */,
+				3A6E582B2277841400D88FF2 /* CoreAudio.framework */,
+				3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */,
+				8144B9AE5CCF82C59DF8314C /* Pods_Patron_PoC_Dev.framework */,
+				9571B3C97F6F44A7AEC76217 /* Pods_Patron_PoC_Prod.framework */,
+				BD1A1D67C445E56F86908A9F /* Pods_Patron_PoCTests.framework */,
+				82876ED1A2D8BA41C8B21989 /* Pods_Patron_PoCUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A37D8DE2281D62300A8701D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3A37D8E02281D62300A8701D /* NodeGenerator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3A37D8F32281FDBC00A8701D /* AR Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A37D8F42281FDE100A8701D /* Espolon.arobject */,
+			);
+			path = "AR Resources";
+			sourceTree = "<group>";
+		};
+		3A6E58172277830D00D88FF2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3A37D8F32281FDBC00A8701D /* AR Resources */,
+				3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3A6E58182277831500D88FF2 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A37D8DE2281D62300A8701D /* Utilities */,
+				3A6E581B2277836100D88FF2 /* AR Classes */,
+			);
+			path = "Swift Files";
+			sourceTree = "<group>";
+		};
+		3A6E581B2277836100D88FF2 /* AR Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A37D90822820A0C00A8701D /* Plane.swift */,
+				3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */,
+				3A37D8F92282009D00A8701D /* BoundingBox.swift */,
+			);
+			path = "AR Classes";
+			sourceTree = "<group>";
+		};
+		BDFAD86A221DFE1B0049D066 = {
+			isa = PBXGroup;
+			children = (
+				BDFAD875221DFE1B0049D066 /* DoritosAR */,
+				BDFAD88A221DFE1C0049D066 /* PatronARTests */,
+				BDFAD895221DFE1C0049D066 /* PatronARUITests */,
+				BDFAD874221DFE1B0049D066 /* Products */,
+				299E4AB43FA0B15C474A0357 /* Frameworks */,
+				14666A8B0DE6037ABB732D0A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BDFAD874221DFE1B0049D066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAD873221DFE1B0049D066 /* Patron PoC-Dev.app */,
+				BDFAD887221DFE1C0049D066 /* Patron PoCTests.xctest */,
+				BDFAD892221DFE1C0049D066 /* Patron PoCUITests.xctest */,
+				3A62700E227B7D9B003BB75F /* Patron PoC-Prod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDFAD875221DFE1B0049D066 /* DoritosAR */ = {
+			isa = PBXGroup;
+			children = (
+				3A6E58172277830D00D88FF2 /* Assets */,
+				3A6E58182277831500D88FF2 /* Swift Files */,
+				BDFAD876221DFE1B0049D066 /* AppDelegate.swift */,
+				BDFAD878221DFE1B0049D066 /* ViewController.swift */,
+				BDFAD87A221DFE1B0049D066 /* Main.storyboard */,
+				BDFAD87D221DFE1C0049D066 /* Assets.xcassets */,
+				3A37D9032282016900A8701D /* art.scnassets */,
+				BDFAD87F221DFE1C0049D066 /* LaunchScreen.storyboard */,
+				BDFAD882221DFE1C0049D066 /* Info-Dev.plist */,
+				3A626FEE227B7D8B003BB75F /* Info-Prod.plist */,
+			);
+			path = DoritosAR;
+			sourceTree = "<group>";
+		};
+		BDFAD88A221DFE1C0049D066 /* PatronARTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAD88B221DFE1C0049D066 /* PatronARTests.swift */,
+				BDFAD88D221DFE1C0049D066 /* Info.plist */,
+			);
+			path = PatronARTests;
+			sourceTree = "<group>";
+		};
+		BDFAD895221DFE1C0049D066 /* PatronARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAD896221DFE1C0049D066 /* PatronARUITests.swift */,
+				BDFAD898221DFE1C0049D066 /* Info.plist */,
+			);
+			path = PatronARUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A626FF2227B7D9B003BB75F /* Patron PoC-Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A62700B227B7D9B003BB75F /* Build configuration list for PBXNativeTarget "Patron PoC-Prod" */;
+			buildPhases = (
+				AFB495CFAA650ABD4BF33FB2 /* [CP] Check Pods Manifest.lock */,
+				3A626FF4227B7D9B003BB75F /* Sources */,
+				3A626FFF227B7D9B003BB75F /* Frameworks */,
+				3A627004227B7D9B003BB75F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Patron PoC-Prod";
+			productName = DoritosAR;
+			productReference = 3A62700E227B7D9B003BB75F /* Patron PoC-Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDFAD872221DFE1B0049D066 /* Patron PoC-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFAD89B221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoC-Dev" */;
+			buildPhases = (
+				CEDFF227BC6B281D5AF1E23F /* [CP] Check Pods Manifest.lock */,
+				BDFAD86F221DFE1B0049D066 /* Sources */,
+				BDFAD870221DFE1B0049D066 /* Frameworks */,
+				BDFAD871221DFE1B0049D066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Patron PoC-Dev";
+			productName = DoritosAR;
+			productReference = BDFAD873221DFE1B0049D066 /* Patron PoC-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDFAD886221DFE1C0049D066 /* Patron PoCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFAD89E221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoCTests" */;
+			buildPhases = (
+				32FBF50E33ABC55F5FE5E933 /* [CP] Check Pods Manifest.lock */,
+				BDFAD883221DFE1C0049D066 /* Sources */,
+				BDFAD884221DFE1C0049D066 /* Frameworks */,
+				BDFAD885221DFE1C0049D066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDFAD889221DFE1C0049D066 /* PBXTargetDependency */,
+			);
+			name = "Patron PoCTests";
+			productName = DoritosARTests;
+			productReference = BDFAD887221DFE1C0049D066 /* Patron PoCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDFAD891221DFE1C0049D066 /* Patron PoCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFAD8A1221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoCUITests" */;
+			buildPhases = (
+				4EED0A1ACE2CA523259CED5B /* [CP] Check Pods Manifest.lock */,
+				BDFAD88E221DFE1C0049D066 /* Sources */,
+				BDFAD88F221DFE1C0049D066 /* Frameworks */,
+				BDFAD890221DFE1C0049D066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDFAD894221DFE1C0049D066 /* PBXTargetDependency */,
+			);
+			name = "Patron PoCUITests";
+			productName = DoritosARUITests;
+			productReference = BDFAD892221DFE1C0049D066 /* Patron PoCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDFAD86B221DFE1B0049D066 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Brad Chessin";
+				TargetAttributes = {
+					BDFAD872221DFE1B0049D066 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BDFAD886221DFE1C0049D066 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BDFAD872221DFE1B0049D066;
+					};
+					BDFAD891221DFE1C0049D066 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BDFAD872221DFE1B0049D066;
+					};
+				};
+			};
+			buildConfigurationList = BDFAD86E221DFE1B0049D066 /* Build configuration list for PBXProject "Patron PoC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDFAD86A221DFE1B0049D066;
+			productRefGroup = BDFAD874221DFE1B0049D066 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDFAD872221DFE1B0049D066 /* Patron PoC-Dev */,
+				3A626FF2227B7D9B003BB75F /* Patron PoC-Prod */,
+				BDFAD886221DFE1C0049D066 /* Patron PoCTests */,
+				BDFAD891221DFE1C0049D066 /* Patron PoCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A627004227B7D9B003BB75F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D8F62281FDE100A8701D /* Espolon.arobject in Resources */,
+				3A37D9052282016900A8701D /* art.scnassets in Resources */,
+				3A627005227B7D9B003BB75F /* LaunchScreen.storyboard in Resources */,
+				3A627006227B7D9B003BB75F /* Assets.xcassets in Resources */,
+				3A37D8F02281E08300A8701D /* PatronLaunchImage.png in Resources */,
+				3A627009227B7D9B003BB75F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD871221DFE1B0049D066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D8F52281FDE100A8701D /* Espolon.arobject in Resources */,
+				3A37D9042282016900A8701D /* art.scnassets in Resources */,
+				BDFAD881221DFE1C0049D066 /* LaunchScreen.storyboard in Resources */,
+				BDFAD87E221DFE1C0049D066 /* Assets.xcassets in Resources */,
+				3A37D8EF2281E08300A8701D /* PatronLaunchImage.png in Resources */,
+				3A626FEF227B7D8B003BB75F /* Info-Prod.plist in Resources */,
+				BDFAD87C221DFE1B0049D066 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD885221DFE1C0049D066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D9062282016900A8701D /* art.scnassets in Resources */,
+				3A37D8F72281FDE100A8701D /* Espolon.arobject in Resources */,
+				3A626FF0227B7D8B003BB75F /* Info-Prod.plist in Resources */,
+				3A37D8F12281E08300A8701D /* PatronLaunchImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD890221DFE1C0049D066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D8F82281FDE100A8701D /* Espolon.arobject in Resources */,
+				3A37D9072282016900A8701D /* art.scnassets in Resources */,
+				3A37D8F22281E08300A8701D /* PatronLaunchImage.png in Resources */,
+				3A626FF1227B7D8B003BB75F /* Info-Prod.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32FBF50E33ABC55F5FE5E933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patron PoCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EED0A1ACE2CA523259CED5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patron PoCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFB495CFAA650ABD4BF33FB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patron PoC-Prod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDFF227BC6B281D5AF1E23F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patron PoC-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A626FF4227B7D9B003BB75F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D8FB2282009D00A8701D /* BoundingBox.swift in Sources */,
+				3A626FF5227B7D9B003BB75F /* ViewController.swift in Sources */,
+				3A37D8E62281D62300A8701D /* NodeGenerator.swift in Sources */,
+				3A626FF6227B7D9B003BB75F /* ARRecorder.swift in Sources */,
+				3A37D90A22820A0C00A8701D /* Plane.swift in Sources */,
+				3A626FFA227B7D9B003BB75F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD86F221DFE1B0049D066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37D8FA2282009D00A8701D /* BoundingBox.swift in Sources */,
+				BDFAD879221DFE1B0049D066 /* ViewController.swift in Sources */,
+				3A37D8E52281D62300A8701D /* NodeGenerator.swift in Sources */,
+				3A6DD27F2279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
+				3A37D90922820A0C00A8701D /* Plane.swift in Sources */,
+				BDFAD877221DFE1B0049D066 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD883221DFE1C0049D066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6DD2802279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
+				BDFAD88C221DFE1C0049D066 /* PatronARTests.swift in Sources */,
+				3A37D90B22820A0C00A8701D /* Plane.swift in Sources */,
+				3A37D8E72281D62300A8701D /* NodeGenerator.swift in Sources */,
+				3A37D8FC2282009D00A8701D /* BoundingBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFAD88E221DFE1C0049D066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6DD2812279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
+				BDFAD897221DFE1C0049D066 /* PatronARUITests.swift in Sources */,
+				3A37D90C22820A0C00A8701D /* Plane.swift in Sources */,
+				3A37D8E82281D62300A8701D /* NodeGenerator.swift in Sources */,
+				3A37D8FD2282009D00A8701D /* BoundingBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDFAD889221DFE1C0049D066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDFAD872221DFE1B0049D066 /* Patron PoC-Dev */;
+			targetProxy = BDFAD888221DFE1C0049D066 /* PBXContainerItemProxy */;
+		};
+		BDFAD894221DFE1C0049D066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDFAD872221DFE1B0049D066 /* Patron PoC-Dev */;
+			targetProxy = BDFAD893221DFE1C0049D066 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDFAD87A221DFE1B0049D066 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFAD87B221DFE1B0049D066 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDFAD87F221DFE1C0049D066 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFAD880221DFE1C0049D066 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A62700C227B7D9B003BB75F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AA081D1EE0F7FDD33AC1C8 /* Pods-Patron PoC-Prod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L89MGW88S;
+				INFOPLIST_FILE = "$(SRCROOT)/DoritosAR/Info-Prod.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A62700D227B7D9B003BB75F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF87451C4ABD14F15CA28DD /* Pods-Patron PoC-Prod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L89MGW88S;
+				INFOPLIST_FILE = "$(SRCROOT)/DoritosAR/Info-Prod.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDFAD899221DFE1C0049D066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDFAD89A221DFE1C0049D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDFAD89C221DFE1C0049D066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2DB30C5B3D693112290734 /* Pods-Patron PoC-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L89MGW88S;
+				INFOPLIST_FILE = "$(SRCROOT)/DoritosAR/Info-Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDFAD89D221DFE1C0049D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997F978B95F2DF44396B3B2C /* Pods-Patron PoC-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L89MGW88S;
+				INFOPLIST_FILE = "$(SRCROOT)/DoritosAR/Info-Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosAR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDFAD89F221DFE1C0049D066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E4B3B319175837D73DFB82 /* Pods-Patron PoCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58KZY5UTK;
+				INFOPLIST_FILE = DoritosARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patron PoC.app/Patron PoC";
+			};
+			name = Debug;
+		};
+		BDFAD8A0221DFE1C0049D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8FE192441E735B90FC9566 /* Pods-Patron PoCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58KZY5UTK;
+				INFOPLIST_FILE = DoritosARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patron PoC.app/Patron PoC";
+			};
+			name = Release;
+		};
+		BDFAD8A2221DFE1C0049D066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C9C2389B4A0E7AD5B4EBC5 /* Pods-Patron PoCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58KZY5UTK;
+				INFOPLIST_FILE = DoritosARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoritosAR;
+			};
+			name = Debug;
+		};
+		BDFAD8A3221DFE1C0049D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1784BF56C95FFDD5AADEE14 /* Pods-Patron PoCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58KZY5UTK;
+				INFOPLIST_FILE = DoritosARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rose-Digital.DoritosARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoritosAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A62700B227B7D9B003BB75F /* Build configuration list for PBXNativeTarget "Patron PoC-Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A62700C227B7D9B003BB75F /* Debug */,
+				3A62700D227B7D9B003BB75F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFAD86E221DFE1B0049D066 /* Build configuration list for PBXProject "Patron PoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFAD899221DFE1C0049D066 /* Debug */,
+				BDFAD89A221DFE1C0049D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFAD89B221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoC-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFAD89C221DFE1C0049D066 /* Debug */,
+				BDFAD89D221DFE1C0049D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFAD89E221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFAD89F221DFE1C0049D066 /* Debug */,
+				BDFAD8A0221DFE1C0049D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFAD8A1221DFE1C0049D066 /* Build configuration list for PBXNativeTarget "Patron PoCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFAD8A2221DFE1C0049D066 /* Debug */,
+				BDFAD8A3221DFE1C0049D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDFAD86B221DFE1B0049D066 /* Project object */;
+}
