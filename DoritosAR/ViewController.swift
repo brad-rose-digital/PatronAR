@@ -68,13 +68,19 @@ class ViewController: UIViewController {
         
         // Load reference images to look for from "AR Resources" folder
         guard let detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "AR Resources", bundle: nil) else {
-            fatalError("Missing expected asset catalog resources.")
+            fatalError("Missing expected object asset catalog resources.")
+        }
+        
+        guard let trackingImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Image Resources", bundle: nil) else {
+            fatalError("Missing expected image asset catalog resources.")
         }
         
         if ARWorldTrackingConfiguration.isSupported {
             let configuration = ARWorldTrackingConfiguration()
             configuration.planeDetection = .horizontal
             configuration.detectionObjects = detectionObjects
+            configuration.detectionImages = trackingImages
+            configuration.maximumNumberOfTrackedImages = 2 //this is a temp value
             sceneView?.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         }
     }
@@ -82,6 +88,38 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView?.session.pause()
+    }
+    
+    func setupVideoOnNode(_ node: SCNNode, fromURL url: URL){
+        
+        //1. Create An SKVideoNode
+        var videoPlayerNode: SKVideoNode!
+        
+        //2. Create An AVPlayer With Our Video URL
+        let videoPlayer = AVPlayer(url: url)
+        
+        //3. Intialize The Video Node With Our Video Player
+        videoPlayerNode = SKVideoNode(avPlayer: videoPlayer)
+        videoPlayerNode.yScale = -1
+        
+        //4. Create A SpriteKitScene & Postion It
+        let spriteKitScene = SKScene(size: CGSize(width: 600, height: 300))
+        spriteKitScene.scaleMode = .aspectFit
+        videoPlayerNode.position = CGPoint(x: spriteKitScene.size.width/2, y: spriteKitScene.size.height/2)
+        videoPlayerNode.size = spriteKitScene.size
+        spriteKitScene.addChild(videoPlayerNode)
+        
+        //6. Set The Nodes Geoemtry Diffuse Contenets To Our SpriteKit Scene
+        node.geometry?.firstMaterial?.diffuse.contents = spriteKitScene
+        
+        //5. Play The Video
+        videoPlayerNode.play()
+        
+        //Loop the video
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
+            videoPlayer.seek(to: CMTime.zero)
+            videoPlayer.play()
+        }
     }
 
 }
@@ -112,6 +150,29 @@ extension ViewController: ARSCNViewDelegate {
                 let newVector = SCNVector3Make(0, height, 0)
                 textNode.position = newVector
                 bottleNode.addChildNode(textNode)
+            }
+            
+            if let imageAnchor = anchor as? ARImageAnchor {
+                print("Added image anchor")
+                let referenceImage = imageAnchor.referenceImage
+                
+                //2. Get The Physical Width & Height Of Our Reference Image
+                let width = CGFloat(referenceImage.physicalSize.width)
+                let height = CGFloat(referenceImage.physicalSize.height)
+                
+                //3. Create An SCNNode To Hold Our Video Player With The Same Size As The Image Target
+                let videoHolder = SCNNode()
+                let videoHolderGeometry = SCNPlane(width: width, height: height)
+                videoHolder.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
+                videoHolder.geometry = videoHolderGeometry
+                
+                //4. Create Our Video Player
+                if let videoURL = Bundle.main.url(forResource: "EspolonCommercial", withExtension: "mp4"){
+                    self.setupVideoOnNode(videoHolder, fromURL: videoURL)
+                }
+                
+                //5. Add It To The Hierarchy
+                node.addChildNode(videoHolder)
             }
             
             if let planeAnchor = anchor as? ARPlaneAnchor {

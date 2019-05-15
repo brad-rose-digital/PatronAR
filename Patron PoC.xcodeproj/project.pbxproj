@@ -16,10 +16,6 @@
 		3A37D8F02281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
 		3A37D8F12281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
 		3A37D8F22281E08300A8701D /* PatronLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */; };
-		3A37D8F52281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
-		3A37D8F62281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
-		3A37D8F72281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
-		3A37D8F82281FDE100A8701D /* Espolon.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3A37D8F42281FDE100A8701D /* Espolon.arobject */; };
 		3A37D8FA2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
 		3A37D8FB2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
 		3A37D8FC2282009D00A8701D /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37D8F92282009D00A8701D /* BoundingBox.swift */; };
@@ -40,11 +36,14 @@
 		3A38DFE6228C566300B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
 		3A38DFE7228C566400B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
 		3A38DFE8228C566400B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
+		3A38DFEA228C70D600B1821A /* EspolonCommercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */; };
+		3A38DFEB228C70D600B1821A /* EspolonCommercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */; };
+		3A38DFEC228C70D600B1821A /* EspolonCommercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */; };
+		3A38DFED228C70D600B1821A /* EspolonCommercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */; };
 		3A626FEF227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
 		3A626FF0227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
 		3A626FF1227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
 		3A626FF5227B7D9B003BB75F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD878221DFE1B0049D066 /* ViewController.swift */; };
-		3A626FF6227B7D9B003BB75F /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
 		3A626FFA227B7D9B003BB75F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAD876221DFE1B0049D066 /* AppDelegate.swift */; };
 		3A627000227B7D9B003BB75F /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582F2277841900D88FF2 /* ARKit.framework */; };
 		3A627001227B7D9B003BB75F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582B2277841400D88FF2 /* CoreAudio.framework */; };
@@ -52,9 +51,6 @@
 		3A627005227B7D9B003BB75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87F221DFE1C0049D066 /* LaunchScreen.storyboard */; };
 		3A627006227B7D9B003BB75F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87D221DFE1C0049D066 /* Assets.xcassets */; };
 		3A627009227B7D9B003BB75F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFAD87A221DFE1B0049D066 /* Main.storyboard */; };
-		3A6DD27F2279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
-		3A6DD2802279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
-		3A6DD2812279F6AB00E2E8E4 /* ARRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */; };
 		3A6E582D2277841400D88FF2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582B2277841400D88FF2 /* CoreAudio.framework */; };
 		3A6E582E2277841400D88FF2 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */; };
 		3A6E58302277841900D88FF2 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6E582F2277841900D88FF2 /* ARKit.framework */; };
@@ -95,15 +91,14 @@
 		1823C736626CF884EF6CC4C5 /* Pods-DoritosARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoritosARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoritosARTests/Pods-DoritosARTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A37D8E02281D62300A8701D /* NodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeGenerator.swift; sourceTree = "<group>"; };
 		3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PatronLaunchImage.png; sourceTree = "<group>"; };
-		3A37D8F42281FDE100A8701D /* Espolon.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = Espolon.arobject; sourceTree = "<group>"; };
 		3A37D8F92282009D00A8701D /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
 		3A37D9032282016900A8701D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3A37D90822820A0C00A8701D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extension.swift"; sourceTree = "<group>"; };
+		3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EspolonCommercial.mp4; sourceTree = "<group>"; };
 		3A626FEE227B7D8B003BB75F /* Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Prod.plist"; sourceTree = "<group>"; };
 		3A62700E227B7D9B003BB75F /* Patron PoC-Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patron PoC-Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRecorder.swift; sourceTree = "<group>"; };
 		3A6E582B2277841400D88FF2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		3A6E582C2277841400D88FF2 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		3A6E582F2277841900D88FF2 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
@@ -224,14 +219,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		3A37D8F32281FDBC00A8701D /* AR Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3A37D8F42281FDE100A8701D /* Espolon.arobject */,
-			);
-			path = "AR Resources";
-			sourceTree = "<group>";
-		};
 		3A38DFDE228B467900B1821A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,7 +231,7 @@
 		3A6E58172277830D00D88FF2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				3A37D8F32281FDBC00A8701D /* AR Resources */,
+				3A38DFE9228C70D600B1821A /* EspolonCommercial.mp4 */,
 				3A37D8EE2281E08300A8701D /* PatronLaunchImage.png */,
 			);
 			path = Assets;
@@ -264,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				3A37D90822820A0C00A8701D /* Plane.swift */,
-				3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */,
 				3A37D8F92282009D00A8701D /* BoundingBox.swift */,
 			);
 			path = "AR Classes";
@@ -454,9 +440,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A37D8F62281FDE100A8701D /* Espolon.arobject in Resources */,
 				3A37D9052282016900A8701D /* art.scnassets in Resources */,
 				3A627005227B7D9B003BB75F /* LaunchScreen.storyboard in Resources */,
+				3A38DFEB228C70D600B1821A /* EspolonCommercial.mp4 in Resources */,
 				3A627006227B7D9B003BB75F /* Assets.xcassets in Resources */,
 				3A37D8F02281E08300A8701D /* PatronLaunchImage.png in Resources */,
 				3A627009227B7D9B003BB75F /* Main.storyboard in Resources */,
@@ -467,9 +453,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A37D8F52281FDE100A8701D /* Espolon.arobject in Resources */,
 				3A37D9042282016900A8701D /* art.scnassets in Resources */,
 				BDFAD881221DFE1C0049D066 /* LaunchScreen.storyboard in Resources */,
+				3A38DFEA228C70D600B1821A /* EspolonCommercial.mp4 in Resources */,
 				BDFAD87E221DFE1C0049D066 /* Assets.xcassets in Resources */,
 				3A37D8EF2281E08300A8701D /* PatronLaunchImage.png in Resources */,
 				3A626FEF227B7D8B003BB75F /* Info-Prod.plist in Resources */,
@@ -481,8 +467,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A38DFEC228C70D600B1821A /* EspolonCommercial.mp4 in Resources */,
 				3A37D9062282016900A8701D /* art.scnassets in Resources */,
-				3A37D8F72281FDE100A8701D /* Espolon.arobject in Resources */,
 				3A626FF0227B7D8B003BB75F /* Info-Prod.plist in Resources */,
 				3A37D8F12281E08300A8701D /* PatronLaunchImage.png in Resources */,
 			);
@@ -492,7 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A37D8F82281FDE100A8701D /* Espolon.arobject in Resources */,
+				3A38DFED228C70D600B1821A /* EspolonCommercial.mp4 in Resources */,
 				3A37D9072282016900A8701D /* art.scnassets in Resources */,
 				3A37D8F22281E08300A8701D /* PatronLaunchImage.png in Resources */,
 				3A626FF1227B7D8B003BB75F /* Info-Prod.plist in Resources */,
@@ -600,7 +586,6 @@
 				3A37D8FB2282009D00A8701D /* BoundingBox.swift in Sources */,
 				3A626FF5227B7D9B003BB75F /* ViewController.swift in Sources */,
 				3A37D8E62281D62300A8701D /* NodeGenerator.swift in Sources */,
-				3A626FF6227B7D9B003BB75F /* ARRecorder.swift in Sources */,
 				3A38DFE6228C566300B1821A /* SCNNode+Extension.swift in Sources */,
 				3A38DFE1228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A37D90A22820A0C00A8701D /* Plane.swift in Sources */,
@@ -615,7 +600,6 @@
 				3A37D8FA2282009D00A8701D /* BoundingBox.swift in Sources */,
 				BDFAD879221DFE1B0049D066 /* ViewController.swift in Sources */,
 				3A37D8E52281D62300A8701D /* NodeGenerator.swift in Sources */,
-				3A6DD27F2279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
 				3A38DFE5228C566300B1821A /* SCNNode+Extension.swift in Sources */,
 				3A38DFE0228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A37D90922820A0C00A8701D /* Plane.swift in Sources */,
@@ -629,7 +613,6 @@
 			files = (
 				3A38DFE2228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A38DFE7228C566400B1821A /* SCNNode+Extension.swift in Sources */,
-				3A6DD2802279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
 				BDFAD88C221DFE1C0049D066 /* PatronARTests.swift in Sources */,
 				3A37D90B22820A0C00A8701D /* Plane.swift in Sources */,
 				3A37D8E72281D62300A8701D /* NodeGenerator.swift in Sources */,
@@ -643,7 +626,6 @@
 			files = (
 				3A38DFE3228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A38DFE8228C566400B1821A /* SCNNode+Extension.swift in Sources */,
-				3A6DD2812279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
 				BDFAD897221DFE1C0049D066 /* PatronARUITests.swift in Sources */,
 				3A37D90C22820A0C00A8701D /* Plane.swift in Sources */,
 				3A37D8E82281D62300A8701D /* NodeGenerator.swift in Sources */,
