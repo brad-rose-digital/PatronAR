@@ -36,6 +36,10 @@
 		3A38DFE1228B4B5100B1821A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */; };
 		3A38DFE2228B4B5100B1821A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */; };
 		3A38DFE3228B4B5100B1821A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */; };
+		3A38DFE5228C566300B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
+		3A38DFE6228C566300B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
+		3A38DFE7228C566400B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
+		3A38DFE8228C566400B1821A /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */; };
 		3A626FEF227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
 		3A626FF0227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
 		3A626FF1227B7D8B003BB75F /* Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A626FEE227B7D8B003BB75F /* Info-Prod.plist */; };
@@ -96,6 +100,7 @@
 		3A37D9032282016900A8701D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3A37D90822820A0C00A8701D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extension.swift"; sourceTree = "<group>"; };
 		3A626FEE227B7D8B003BB75F /* Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Prod.plist"; sourceTree = "<group>"; };
 		3A62700E227B7D9B003BB75F /* Patron PoC-Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patron PoC-Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6DD27E2279F6AB00E2E8E4 /* ARRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRecorder.swift; sourceTree = "<group>"; };
@@ -231,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				3A38DFDF228B4B5100B1821A /* UIViewController+Extension.swift */,
+				3A38DFE4228C566300B1821A /* SCNNode+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -595,6 +601,7 @@
 				3A626FF5227B7D9B003BB75F /* ViewController.swift in Sources */,
 				3A37D8E62281D62300A8701D /* NodeGenerator.swift in Sources */,
 				3A626FF6227B7D9B003BB75F /* ARRecorder.swift in Sources */,
+				3A38DFE6228C566300B1821A /* SCNNode+Extension.swift in Sources */,
 				3A38DFE1228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A37D90A22820A0C00A8701D /* Plane.swift in Sources */,
 				3A626FFA227B7D9B003BB75F /* AppDelegate.swift in Sources */,
@@ -609,6 +616,7 @@
 				BDFAD879221DFE1B0049D066 /* ViewController.swift in Sources */,
 				3A37D8E52281D62300A8701D /* NodeGenerator.swift in Sources */,
 				3A6DD27F2279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
+				3A38DFE5228C566300B1821A /* SCNNode+Extension.swift in Sources */,
 				3A38DFE0228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
 				3A37D90922820A0C00A8701D /* Plane.swift in Sources */,
 				BDFAD877221DFE1B0049D066 /* AppDelegate.swift in Sources */,
@@ -620,6 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A38DFE2228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
+				3A38DFE7228C566400B1821A /* SCNNode+Extension.swift in Sources */,
 				3A6DD2802279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
 				BDFAD88C221DFE1C0049D066 /* PatronARTests.swift in Sources */,
 				3A37D90B22820A0C00A8701D /* Plane.swift in Sources */,
@@ -633,6 +642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A38DFE3228B4B5100B1821A /* UIViewController+Extension.swift in Sources */,
+				3A38DFE8228C566400B1821A /* SCNNode+Extension.swift in Sources */,
 				3A6DD2812279F6AB00E2E8E4 /* ARRecorder.swift in Sources */,
 				BDFAD897221DFE1C0049D066 /* PatronARUITests.swift in Sources */,
 				3A37D90C22820A0C00A8701D /* Plane.swift in Sources */,

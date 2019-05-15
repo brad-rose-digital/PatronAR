@@ -27,6 +27,30 @@ class ViewController: UIViewController {
         
         //Create the AR Scene view
         createARView()
+        
+        //Add a tap gesture recognizer on the view to detect a user tapping on objects
+        let tap = UITapGestureRecognizer(target: self, action: #selector(search))
+        self.sceneView!.addGestureRecognizer(tap)
+    }
+    
+    @objc func search(sender: UITapGestureRecognizer) {
+        
+        let sceneView = sender.view as! ARSCNView
+        let location = sender.location(in: sceneView)
+        let results = sceneView.hitTest(location, options: [SCNHitTestOption.searchMode : 1])
+        
+        guard sender.state == .ended else { return }
+        
+        for result in results {
+            for (name, node) in bottleNodeMap {
+                if result.node.hasAncestor(node as! SCNNode) {
+                    let nodeName = name as! String
+                    let nodeMessage = "You tapped on: " + nodeName
+                    self.showAlert(title: nodeName, msg: nodeMessage)
+                    return
+                }
+            }
+        }
     }
     
     func createARView() {
@@ -77,16 +101,17 @@ extension ViewController: ARSCNViewDelegate {
                 
                 //Get the name of the object
                 let objectName = objectAnchor.referenceObject.name
+                bottleNode.name = objectName
                 
                 //Add our node to our bottle node array
                 self.bottleNodeMap.setObject(bottleNode, forKey: objectName! as NSCopying)
                 
                 //Add a label above the bounding box
                 let textNode = self.createTextNode(string: objectName ?? "")
-                let bottleVector = bottleNode.position
-                let newVector = SCNVector3Make(bottleVector.x, height, bottleVector.z)
+                textNode.centerNode()
+                let newVector = SCNVector3Make(0, height, 0)
                 textNode.position = newVector
-                self.sceneView?.scene.rootNode.addChildNode(textNode)
+                bottleNode.addChildNode(textNode)
             }
             
             if let planeAnchor = anchor as? ARPlaneAnchor {
@@ -117,20 +142,6 @@ extension ViewController: ARSCNViewDelegate {
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let currentTouchLocation = touches.first?.location(in: self.sceneView!)
-        let hitNode = self.sceneView!.hitTest(currentTouchLocation!, options: nil).first?.node
-        
-        for (name, node) in bottleNodeMap {
-            let currNode = node as! SCNNode
-            print("outside: \(name)")
-            if let hitNode = hitNode, hitNode.hasAncestor(currNode) {
-                let alertMsg = "You tapped on " + "\(name)" + " !"
-                self.showAlert(title: name as! String, msg: alertMsg)
-            }
-        }
-    }
-    
     //MARK: Plane Adding / Updating / Removing
     func addPlane(node: SCNNode, anchor: ARPlaneAnchor) {
         let plane = Plane(anchor)
@@ -151,22 +162,6 @@ extension ViewController: ARSCNViewDelegate {
         if let plane = planes.removeValue(forKey: anchor) {
             plane.removeFromParentNode()
         }
-    }
-}
-
-extension SCNNode {
-    func hasAncestor(_ node: SCNNode) -> Bool {
-        if self === node {
-            return true // this is the node you're looking for
-        }
-        if self.parent == nil {
-            return false // target node can't be a parent/ancestor if we have no parent
-        }
-        if self.parent === node {
-            return true // target node is this node's direct parent
-        }
-        // otherwise recurse to check parent's parent and so on
-        return self.parent!.hasAncestor(node)
     }
 }
 
