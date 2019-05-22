@@ -29,6 +29,7 @@
 This showcases the business card part of the demo. As you can see, a finger disrupts the plane detections. A low-pass filter would be needed to normalize this.
 
 ![Object Detection and Label Detection](https://media.giphy.com/media/Qumw7SSdam8bUleEDv/giphy.gif)
+
 In this demo you can visually see how the app can track a custom 3d object and add a bounding box around it.
 
 You can also see how it recognizes the Zackariah Harris label and will play a video on that label.
