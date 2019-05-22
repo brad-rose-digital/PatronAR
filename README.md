@@ -1,4 +1,4 @@
-﻿
+
 # ARKit Demo
 
 ###  Bottle detection (works with multiple bottles in some cases)
@@ -24,7 +24,17 @@
 	- This just illustrates that it is possible to track any image or object and do custom actions for that
 	- The app will follow the image or object as it moves and then move the accompanying nodes with it (this was new for ARKit 1.5)
 
-  
+  ### Demo Videos
+![Business Card](https://media.giphy.com/media/H7HYosfVqotAnlcmfR/giphy.gif)
+This showcases the business card part of the demo. As you can see, a finger disrupts the plane detections. A low-pass filter would be needed to normalize this.
+
+![Object Detection and Label Detection](https://media.giphy.com/media/Qumw7SSdam8bUleEDv/giphy.gif)
+In this demo you can visually see how the app can track a custom 3d object and add a bounding box around it.
+
+You can also see how it recognizes the Zackariah Harris label and will play a video on that label.
+
+*Note:*
+This has similar accuracy issues as the other areas of the demo. But there is not a tremendous amount we can do about that object/image detection is native to ARKit and not custom to this demo.
 
 # Miscellaneous
 
@@ -47,4 +57,3 @@
 		- This can in theory be smoothed with an advanced algorithm to detect sudden changes. (A low-pass filter could help in this case - however not implemented in this demo)
 
 	- When adding objects or image recognition objects to the project, it will ask you for a physical size. Make sure this is AS ACCURATE AS POSSIBLE. Doing so will result in better results.
-
