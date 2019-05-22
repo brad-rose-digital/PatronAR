@@ -26,6 +26,7 @@
 
   ### Demo Videos
 ![Business Card](https://media.giphy.com/media/H7HYosfVqotAnlcmfR/giphy.gif)
+
 This showcases the business card part of the demo. As you can see, a finger disrupts the plane detections. A low-pass filter would be needed to normalize this.
 
 ![Object Detection and Label Detection](https://media.giphy.com/media/Qumw7SSdam8bUleEDv/giphy.gif)
